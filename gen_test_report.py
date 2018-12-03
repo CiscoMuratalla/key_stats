@@ -8,6 +8,13 @@ import glob
 import datetime
 import matplotlib.pyplot as plt
 
+# NEW TASK
+# Focused charts based on Description then Facility
+# result ratio failed and succeeded
+# mean of excecution time
+# interactive html page that allows for -
+# selection discrete Description or Facility
+
 #
 # update PYTHONPATH
 #
