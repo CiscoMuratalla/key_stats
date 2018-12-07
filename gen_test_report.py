@@ -47,6 +47,7 @@ for i in range(300):
                           Result = random.choice((0,8)),
                           Execution_time = int(random.random() * 10**3),
                           Information = random.choice(info_choices),
+                          Output = ''
               )
    )
 
