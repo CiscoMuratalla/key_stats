@@ -7,6 +7,11 @@ import pandas as pd
 import glob
 import datetime
 import matplotlib.pyplot as plt
+import plotly as py
+py.tools.set_credentials_file(username = 'ciscomuratalla', api_key = 'gDxJPZBcIwMITdr6dMnb')
+#py.tools.get_embed('https://plot.ly/~ciscomuratalla/66')
+import cufflinks as cf
+import webbrowser
 
 # NEW TASK
 # Focused charts based on Description then Facility
@@ -54,32 +59,45 @@ test_report.write_csv('csv_file')
 
 path = os.getcwd()
 
-df = pd.concat([pd.read_csv(f) for f in glob.glob(path + '/*.csv')])
+files = glob.glob('*.csv')
+list_of_dfs = [pd.read_csv(filename) for filename in files]
+# for df, filename in zip(list_of_dfs, files):
+#     df['filename'] = filename
 
+# concatenate list of csv files into one dataframe
+combined_df = pd.concat(list_of_dfs, ignore_index=True)
+
+# convert Execution_time from seconds to minutes
+combined_df['Execution_time'] = (combined_df['Execution_time']/60).round(1)
+
+# rename columns
+combined_df.rename(columns = {'Execution_time' : 'Minutes_elapsed'}, inplace = True)
+
+# df = pd.concat([pd.read_csv(f) for f in glob.glob(path + '/*.csv')])
 
 # convert int to str in 'Result'
-df['Result'] = df['Result'].apply(lambda x: 'Fail' if 0 <= x <= 5 else 'Success')
+combined_df['Result'] = combined_df['Result'].apply(lambda x: 'Fail' if 0 <= x <= 5 else 'Success')
 
 # Chart 1
-df_plot = df.pivot_table('Execution_time', index = 'Facility', columns = 'Description')
+df_plot = combined_df.pivot_table('Minutes_elapsed', index = 'Facility', columns = 'Description')
 df_plot.plot(kind='bar')
 plt.title('Animal Speed by Facility')
 plt.ylabel('seconds')
 plt.tight_layout()
 
 # Chart 2
-df_avg_speed = df['Execution_time'].groupby(df['Description']).mean().sort_values(ascending=False)
+df_avg_speed = combined_df['Minutes_elapsed'].groupby(combined_df['Description']).mean().sort_values(ascending=False)
 df_avg_speed.plot(kind='barh')
 plt.title('Animal Mean Speed')
 plt.xlabel('seconds')
 plt.tight_layout()
 
 # Chart 3
-animal_results = pd.crosstab(df['Result'],df['Description']).apply(lambda r: r/r.sum(), axis=0)
+animal_results = pd.crosstab(combined_df['Result'],combined_df['Description']).apply(lambda r: r/r.sum(), axis=0)
 animal_results.unstack(level=0).plot(kind='bar', stacked=True)
 
 # Chart 4
-df_info = df.pivot_table('Execution_time', index = 'Facility', columns = 'Description')
+df_info = combined_df.pivot_table('Minutes_elapsed', index = 'Facility', columns = 'Description')
 
 # subplot
 fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(10,10))
@@ -100,3 +118,16 @@ def open_file():
         os.system('start '+ (Path + file))
 
 open_file()
+
+# drop unnecessary columns
+simple = combined_df.drop(['Test_group', 'Test_number', 'Information', 'Output', 'Result'], axis =1)
+
+# create pivot table dataframe
+s = pd.pivot_table(simple, index = 'Description', columns = 'Facility', values = 'Minutes_elapsed')
+
+# plot dataframe
+s.iplot(yTitle = 'Minutes', title = 'Minutes Elapsed', mode = 'lines+markers')
+
+# open plot
+url = 'https://plot.ly/~ciscomuratalla/66'
+webbrowser.open(url)
