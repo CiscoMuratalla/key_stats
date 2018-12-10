@@ -29,7 +29,7 @@ HTML_TRAILER = """\
 
 field_names = [
                'Facility', 'Test_group', 'Test_number',
-              'Description', 'Result', 'Execution_time', 'Output'
+              'Description', 'Result', 'Execution_time', 'Information','Output'
 ]
 
 Test_record = namedtuple('Test_record', field_names )
