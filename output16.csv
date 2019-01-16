@@ -1,301 +1,301 @@
-Facility,Test_group,Test_number,Description,Result,Execution_time,Information,Output
-Kitchen,685,0,Cat,8,119,Red,
-Den,933,1,Horse,8,142,Brown,
-Kitchen,343,2,Mule,8,310,Purple,
-Patio,55,3,Mule,8,232,Blue,
-Patio,289,4,Horse,8,861,Purple,
-Patio,481,5,Cat,8,695,Blue,
-Kitchen,331,6,Mule,0,727,Red,
-Den,382,7,Dog,8,491,Blue,
-Patio,984,8,Dog,0,180,Maroon,
-Patio,623,9,Dog,0,934,Brown,
-Patio,236,10,Pig,8,409,Red,
-Den,578,11,Pig,8,511,Red,
-Shower,969,12,Pig,8,750,Blue,
-Patio,405,13,Pig,8,694,Blue,
-Room,457,14,Pig,8,438,Maroon,
-Patio,499,15,Mule,0,989,Brown,
-Room,82,16,Pig,8,691,Purple,
-Kitchen,69,17,Horse,8,0,Brown,
-Room,597,18,Mule,0,997,Blue,
-Kitchen,242,19,Dog,0,241,Brown,
-Den,290,20,Pig,8,789,Blue,
-Den,199,21,Cat,8,904,Blue,
-Kitchen,700,22,Mule,0,741,Blue,
-Room,974,23,Pig,8,805,Red,
-Kitchen,640,24,Mule,0,709,Blue,
-Den,116,25,Horse,0,978,Blue,
-Patio,789,26,Cat,0,869,Red,
-Shower,942,27,Horse,0,689,Brown,
-Den,680,28,Pig,8,784,Purple,
-Den,732,29,Horse,0,776,Blue,
-Room,121,30,Dog,0,489,Maroon,
-Shower,528,31,Pig,8,371,Red,
-Shower,797,32,Dog,8,478,Red,
-Den,96,33,Mule,0,320,Purple,
-Patio,284,34,Cat,0,455,Maroon,
-Patio,448,35,Horse,8,654,Maroon,
-Room,829,36,Cat,0,26,Brown,
-Kitchen,503,37,Mule,0,46,Brown,
-Den,230,38,Horse,8,375,Purple,
-Patio,786,39,Dog,8,474,Purple,
-Shower,539,40,Pig,8,800,Red,
-Den,456,41,Pig,8,827,Red,
-Patio,411,42,Cat,8,523,Purple,
-Patio,86,43,Cat,8,997,Maroon,
-Den,66,44,Mule,0,555,Red,
-Room,542,45,Dog,8,28,Maroon,
-Kitchen,269,46,Horse,8,181,Maroon,
-Shower,321,47,Mule,0,551,Brown,
-Room,280,48,Horse,0,700,Brown,
-Patio,933,49,Dog,8,776,Brown,
-Patio,447,50,Mule,0,47,Maroon,
-Den,732,51,Horse,8,810,Blue,
-Kitchen,46,52,Cat,0,337,Maroon,
-Den,351,53,Mule,8,740,Red,
-Patio,229,54,Pig,0,825,Brown,
-Room,183,55,Pig,0,698,Purple,
-Kitchen,53,56,Pig,8,70,Purple,
-Shower,102,57,Pig,0,867,Blue,
-Room,738,58,Horse,0,288,Maroon,
-Den,230,59,Mule,8,757,Maroon,
-Den,958,60,Mule,0,943,Maroon,
-Patio,247,61,Pig,0,993,Maroon,
-Kitchen,336,62,Mule,0,410,Maroon,
-Room,229,63,Horse,8,183,Maroon,
-Shower,876,64,Horse,8,282,Maroon,
-Kitchen,174,65,Cat,8,421,Blue,
-Patio,514,66,Mule,8,758,Blue,
-Kitchen,577,67,Pig,8,53,Blue,
-Den,861,68,Horse,8,277,Purple,
-Patio,747,69,Cat,0,724,Purple,
-Den,268,70,Dog,0,632,Maroon,
-Shower,434,71,Cat,0,875,Blue,
-Den,639,72,Dog,8,214,Maroon,
-Den,470,73,Mule,8,162,Maroon,
-Den,674,74,Cat,8,100,Maroon,
-Room,311,75,Pig,0,54,Blue,
-Kitchen,238,76,Cat,8,382,Blue,
-Room,908,77,Cat,8,87,Red,
-Shower,462,78,Mule,8,646,Red,
-Den,207,79,Dog,0,843,Red,
-Kitchen,801,80,Mule,0,917,Blue,
-Shower,603,81,Horse,8,371,Red,
-Shower,631,82,Mule,0,182,Red,
-Room,968,83,Mule,0,485,Maroon,
-Room,597,84,Dog,8,134,Brown,
-Kitchen,574,85,Mule,8,6,Red,
-Kitchen,393,86,Dog,0,666,Red,
-Den,736,87,Dog,0,279,Purple,
-Patio,482,88,Cat,8,571,Red,
-Kitchen,614,89,Cat,8,972,Blue,
-Kitchen,862,90,Pig,8,505,Brown,
-Kitchen,36,91,Dog,0,831,Maroon,
-Room,122,92,Dog,8,284,Brown,
-Shower,299,93,Pig,8,801,Red,
-Patio,178,94,Cat,8,502,Blue,
-Den,83,95,Mule,0,891,Blue,
-Room,598,96,Mule,0,689,Red,
-Kitchen,871,97,Dog,8,99,Maroon,
-Shower,264,98,Horse,0,6,Red,
-Shower,848,99,Cat,0,134,Red,
-Den,844,100,Horse,0,152,Brown,
-Shower,864,101,Mule,8,351,Maroon,
-Room,834,102,Mule,0,983,Blue,
-Patio,973,103,Cat,8,266,Maroon,
-Room,454,104,Horse,8,498,Brown,
-Den,239,105,Horse,8,245,Brown,
-Patio,235,106,Dog,0,290,Maroon,
-Shower,434,107,Dog,8,778,Red,
-Shower,111,108,Horse,0,185,Maroon,
-Den,791,109,Dog,8,409,Red,
-Den,922,110,Pig,8,677,Brown,
-Den,126,111,Cat,8,965,Red,
-Kitchen,710,112,Mule,8,683,Brown,
-Shower,31,113,Horse,0,265,Maroon,
-Den,506,114,Horse,0,620,Maroon,
-Den,738,115,Cat,0,670,Blue,
-Den,795,116,Cat,8,317,Purple,
-Den,17,117,Pig,0,494,Red,
-Den,549,118,Pig,0,474,Maroon,
-Room,710,119,Dog,0,798,Blue,
-Den,753,120,Dog,0,5,Red,
-Shower,616,121,Dog,0,597,Brown,
-Room,255,122,Horse,8,170,Brown,
-Shower,336,123,Pig,8,84,Maroon,
-Patio,792,124,Cat,0,375,Maroon,
-Kitchen,467,125,Horse,0,519,Red,
-Den,477,126,Dog,0,466,Purple,
-Shower,35,127,Pig,0,243,Blue,
-Kitchen,761,128,Dog,0,58,Maroon,
-Patio,745,129,Horse,0,515,Brown,
-Room,913,130,Cat,0,225,Red,
-Den,507,131,Horse,0,247,Red,
-Patio,120,132,Mule,0,765,Blue,
-Patio,644,133,Mule,8,428,Purple,
-Kitchen,848,134,Mule,0,857,Brown,
-Shower,253,135,Mule,8,2,Brown,
-Patio,454,136,Horse,0,62,Maroon,
-Kitchen,790,137,Dog,0,735,Purple,
-Shower,920,138,Cat,8,302,Purple,
-Den,432,139,Cat,0,271,Maroon,
-Room,5,140,Dog,0,934,Brown,
-Shower,147,141,Pig,0,975,Purple,
-Patio,994,142,Cat,8,182,Maroon,
-Shower,993,143,Pig,8,39,Brown,
-Den,480,144,Pig,0,721,Blue,
-Kitchen,366,145,Dog,0,899,Red,
-Kitchen,788,146,Horse,8,198,Maroon,
-Room,607,147,Mule,8,334,Purple,
-Shower,423,148,Cat,8,109,Purple,
-Den,830,149,Horse,8,610,Maroon,
-Patio,233,150,Pig,0,52,Maroon,
-Shower,711,151,Pig,8,95,Red,
-Den,454,152,Horse,8,75,Maroon,
-Kitchen,918,153,Mule,0,269,Purple,
-Patio,369,154,Pig,8,421,Blue,
-Kitchen,326,155,Pig,0,650,Brown,
-Den,42,156,Mule,0,990,Brown,
-Kitchen,16,157,Dog,8,621,Maroon,
-Shower,830,158,Mule,8,493,Brown,
-Shower,172,159,Horse,8,387,Red,
-Room,318,160,Mule,0,3,Red,
-Room,458,161,Mule,0,431,Red,
-Kitchen,99,162,Horse,0,419,Red,
-Patio,148,163,Mule,8,777,Blue,
-Patio,895,164,Pig,8,643,Blue,
-Den,984,165,Dog,8,518,Purple,
-Kitchen,371,166,Pig,0,146,Blue,
-Shower,700,167,Horse,0,699,Red,
-Den,122,168,Dog,0,318,Purple,
-Den,740,169,Dog,8,550,Blue,
-Room,749,170,Dog,0,600,Maroon,
-Shower,931,171,Mule,0,474,Purple,
-Shower,501,172,Cat,0,521,Red,
-Kitchen,288,173,Cat,0,921,Brown,
-Shower,242,174,Pig,8,760,Maroon,
-Den,805,175,Horse,0,839,Maroon,
-Patio,918,176,Horse,8,256,Purple,
-Den,30,177,Cat,8,466,Purple,
-Kitchen,391,178,Dog,0,931,Brown,
-Patio,519,179,Horse,0,617,Blue,
-Den,850,180,Pig,8,462,Red,
-Room,925,181,Dog,8,377,Blue,
-Shower,548,182,Dog,8,657,Red,
-Shower,97,183,Dog,8,761,Red,
-Room,458,184,Pig,8,643,Maroon,
-Room,864,185,Dog,0,243,Red,
-Patio,652,186,Mule,8,788,Purple,
-Kitchen,988,187,Dog,0,806,Red,
-Patio,278,188,Cat,8,893,Brown,
-Patio,820,189,Dog,0,670,Blue,
-Room,987,190,Dog,0,103,Brown,
-Kitchen,987,191,Mule,0,857,Maroon,
-Kitchen,856,192,Pig,0,584,Maroon,
-Room,297,193,Cat,8,810,Blue,
-Shower,183,194,Pig,8,715,Purple,
-Patio,889,195,Pig,0,932,Maroon,
-Kitchen,75,196,Mule,8,341,Red,
-Room,223,197,Pig,0,64,Maroon,
-Shower,424,198,Dog,8,19,Brown,
-Shower,755,199,Pig,0,453,Maroon,
-Room,313,200,Dog,8,843,Maroon,
-Room,533,201,Cat,0,842,Blue,
-Patio,694,202,Pig,8,299,Red,
-Kitchen,579,203,Pig,8,474,Purple,
-Room,174,204,Cat,8,502,Red,
-Kitchen,71,205,Pig,0,213,Red,
-Kitchen,731,206,Horse,0,493,Maroon,
-Shower,245,207,Pig,0,912,Red,
-Den,217,208,Mule,0,532,Red,
-Shower,786,209,Horse,0,130,Maroon,
-Den,518,210,Pig,0,801,Maroon,
-Shower,563,211,Dog,0,892,Purple,
-Den,186,212,Horse,0,717,Blue,
-Den,697,213,Horse,8,980,Brown,
-Kitchen,641,214,Horse,0,574,Red,
-Den,566,215,Mule,8,376,Red,
-Room,381,216,Horse,0,687,Purple,
-Room,725,217,Dog,8,445,Maroon,
-Shower,185,218,Pig,8,377,Maroon,
-Den,802,219,Horse,8,201,Blue,
-Patio,879,220,Horse,8,252,Blue,
-Kitchen,306,221,Horse,8,982,Purple,
-Den,523,222,Mule,0,42,Maroon,
-Room,840,223,Mule,8,568,Brown,
-Kitchen,86,224,Mule,8,447,Maroon,
-Shower,293,225,Mule,0,405,Red,
-Den,405,226,Mule,8,483,Red,
-Patio,69,227,Cat,0,636,Purple,
-Shower,569,228,Pig,8,687,Red,
-Den,461,229,Cat,0,728,Purple,
-Den,794,230,Mule,0,429,Brown,
-Den,423,231,Horse,0,547,Blue,
-Room,35,232,Dog,8,791,Maroon,
-Room,748,233,Dog,8,587,Maroon,
-Room,691,234,Cat,8,368,Purple,
-Patio,425,235,Cat,0,167,Red,
-Kitchen,807,236,Horse,8,271,Purple,
-Shower,184,237,Mule,8,15,Maroon,
-Patio,523,238,Dog,8,832,Red,
-Kitchen,572,239,Pig,8,517,Brown,
-Den,359,240,Horse,8,41,Maroon,
-Den,87,241,Horse,0,533,Purple,
-Kitchen,113,242,Horse,0,112,Brown,
-Shower,166,243,Horse,8,99,Blue,
-Den,826,244,Cat,8,822,Red,
-Den,963,245,Dog,0,999,Red,
-Room,288,246,Pig,0,72,Blue,
-Den,547,247,Cat,0,547,Maroon,
-Room,212,248,Dog,0,816,Purple,
-Kitchen,139,249,Dog,0,234,Red,
-Kitchen,573,250,Cat,0,214,Purple,
-Room,347,251,Mule,0,42,Brown,
-Patio,333,252,Mule,8,589,Purple,
-Patio,931,253,Cat,8,836,Red,
-Den,523,254,Dog,8,609,Red,
-Patio,618,255,Pig,8,379,Blue,
-Kitchen,551,256,Cat,8,688,Maroon,
-Den,541,257,Cat,8,512,Blue,
-Den,55,258,Dog,8,896,Maroon,
-Patio,629,259,Dog,0,39,Maroon,
-Kitchen,740,260,Cat,0,379,Brown,
-Patio,908,261,Pig,8,121,Maroon,
-Kitchen,370,262,Dog,8,125,Red,
-Den,723,263,Horse,8,686,Purple,
-Kitchen,266,264,Horse,8,583,Purple,
-Patio,99,265,Mule,8,680,Red,
-Shower,339,266,Dog,8,182,Brown,
-Room,723,267,Horse,8,322,Red,
-Room,525,268,Mule,8,168,Brown,
-Den,424,269,Horse,0,42,Purple,
-Den,705,270,Horse,8,965,Maroon,
-Patio,891,271,Pig,8,905,Purple,
-Shower,559,272,Cat,8,85,Purple,
-Kitchen,224,273,Cat,8,653,Blue,
-Shower,164,274,Dog,0,751,Brown,
-Shower,849,275,Mule,0,422,Red,
-Kitchen,702,276,Cat,8,330,Purple,
-Shower,690,277,Horse,8,344,Blue,
-Shower,780,278,Pig,0,71,Red,
-Kitchen,715,279,Dog,8,105,Blue,
-Shower,337,280,Pig,0,586,Red,
-Patio,208,281,Horse,0,575,Brown,
-Kitchen,517,282,Dog,0,545,Purple,
-Shower,268,283,Mule,8,375,Purple,
-Shower,888,284,Pig,0,754,Purple,
-Kitchen,687,285,Mule,0,729,Purple,
-Patio,527,286,Dog,8,841,Brown,
-Kitchen,510,287,Cat,8,242,Purple,
-Shower,634,288,Dog,0,201,Blue,
-Kitchen,943,289,Dog,0,392,Brown,
-Shower,974,290,Pig,8,312,Maroon,
-Room,238,291,Mule,8,763,Maroon,
-Patio,39,292,Pig,8,308,Purple,
-Room,993,293,Horse,8,916,Purple,
-Kitchen,471,294,Mule,8,679,Brown,
-Kitchen,986,295,Dog,0,138,Red,
-Shower,753,296,Mule,0,566,Blue,
-Kitchen,186,297,Pig,8,152,Blue,
-Room,93,298,Dog,0,265,Purple,
-Room,643,299,Horse,0,714,Blue,
+Facility,Description,Result,Minutes_elapsed,Time_stamp
+Dining Room,Cat,8,47,2019-01-09 19:45:41
+Avery,Culebra,8,14,2019-01-09 19:45:41
+Coat Room,Pig,0,67,2019-01-09 19:45:41
+Club House,Rana,0,59,2019-01-09 19:45:41
+Closet,Aardvark,8,34,2019-01-09 19:45:41
+Abuelita's Studio,Pig,8,99,2019-01-09 19:45:41
+Avery,Weasle,0,82,2019-01-09 19:45:41
+Abuelita's Studio,Aardvark,0,51,2019-01-09 19:45:41
+Sauna,Rana,0,38,2019-01-09 19:45:41
+Shower,Pig,8,42,2019-01-09 19:45:41
+Dog House,Pig,0,23,2019-01-09 19:45:41
+Dog House,Mariposa,0,74,2019-01-09 19:45:41
+Home Gym,Tiburon,0,41,2019-01-09 19:45:41
+Club House,Mule,8,11,2019-01-09 19:45:41
+Shower,Mule,0,38,2019-01-09 19:45:41
+Patio,Mariposa,8,59,2019-01-09 19:45:41
+Avery,Aardvark,8,49,2019-01-09 19:45:41
+Dining Room,Pig,0,73,2019-01-09 19:45:41
+Room,Iguana,8,5,2019-01-09 19:45:41
+Den,Iguana,0,72,2019-01-09 19:45:41
+Patio,Cat,8,33,2019-01-09 19:45:41
+Avery,Tiburon,8,36,2019-01-09 19:45:41
+Avery,Culebra,8,30,2019-01-09 19:45:41
+Tree House,Horse,0,66,2019-01-09 19:45:41
+Dog House,Mule,0,48,2019-01-09 19:45:41
+Patio,Mule,0,63,2019-01-09 19:45:41
+Home Gym,Horse,0,67,2019-01-09 19:45:41
+Avery,Aardvark,0,69,2019-01-09 19:45:41
+Den,Cat,0,86,2019-01-09 19:45:41
+Sauna,Mariposa,8,49,2019-01-09 19:45:41
+Abuelita's Studio,Rana,8,80,2019-01-09 19:45:41
+Avery,Tiburon,0,27,2019-01-09 19:45:41
+Home Gym,Dog,8,96,2019-01-09 19:45:41
+Sauna,Mule,0,56,2019-01-09 19:45:41
+Kitchen,Tiburon,0,74,2019-01-09 19:45:41
+Home Gym,Mule,0,81,2019-01-09 19:45:41
+Shower,Rana,0,65,2019-01-09 19:45:41
+Dining Room,Chupacabra,8,62,2019-01-09 19:45:41
+Home Gym,Chupacabra,8,51,2019-01-09 19:45:41
+Coat Room,Chupacabra,8,70,2019-01-09 19:45:41
+Sauna,Chupacabra,8,50,2019-01-09 19:45:41
+Dog House,Culebra,0,41,2019-01-09 19:45:41
+Coat Room,Iguana,0,58,2019-01-09 19:45:41
+Club House,Mariposa,0,98,2019-01-09 19:45:41
+Sauna,Horse,0,50,2019-01-09 19:45:41
+Closet,Tiburon,8,20,2019-01-09 19:45:41
+Den,Cat,0,61,2019-01-09 19:45:41
+Closet,Dog,0,82,2019-01-09 19:45:41
+Closet,Cat,0,17,2019-01-09 19:45:41
+Dog House,Culebra,0,9,2019-01-09 19:45:41
+Abuelita's Studio,Iguana,0,79,2019-01-09 19:45:41
+Kitchen,Tiburon,0,13,2019-01-09 19:45:41
+Abuelita's Studio,Iguana,8,61,2019-01-09 19:45:41
+Shower,Dog,0,40,2019-01-09 19:45:41
+Patio,Rana,8,39,2019-01-09 19:45:41
+Patio,Culebra,8,85,2019-01-09 19:45:41
+Patio,Weasle,0,34,2019-01-09 19:45:41
+Home Gym,Rana,8,54,2019-01-09 19:45:41
+Coat Room,Chupacabra,0,79,2019-01-09 19:45:41
+Kitchen,Rana,0,32,2019-01-09 19:45:41
+Avery,Weasle,8,49,2019-01-09 19:45:41
+Room,Tiburon,8,66,2019-01-09 19:45:41
+Dining Room,Rana,0,99,2019-01-09 19:45:41
+Dining Room,Horse,0,81,2019-01-09 19:45:41
+Tree House,Mariposa,8,9,2019-01-09 19:45:41
+Home Gym,Iguana,8,97,2019-01-09 19:45:41
+Den,Pig,0,89,2019-01-09 19:45:41
+Coat Room,Dog,0,5,2019-01-09 19:45:41
+Dog House,Dog,0,98,2019-01-09 19:45:41
+Den,Aardvark,8,75,2019-01-09 19:45:41
+Dog House,Tiburon,0,79,2019-01-09 19:45:41
+Club House,Culebra,8,67,2019-01-09 19:45:41
+Shower,Mule,8,48,2019-01-09 19:45:41
+Club House,Cat,0,10,2019-01-09 19:45:41
+Home Gym,Rana,0,84,2019-01-09 19:45:41
+Patio,Chupacabra,8,96,2019-01-09 19:45:41
+Abuelita's Studio,Pig,8,68,2019-01-09 19:45:41
+Sauna,Cat,8,39,2019-01-09 19:45:41
+Coat Room,Mariposa,8,92,2019-01-09 19:45:41
+Shower,Cat,8,23,2019-01-09 19:45:41
+Closet,Horse,0,4,2019-01-09 19:45:41
+Closet,Aardvark,0,81,2019-01-09 19:45:41
+Abuelita's Studio,Horse,0,68,2019-01-09 19:45:41
+Closet,Horse,0,2,2019-01-09 19:45:41
+Patio,Chupacabra,8,76,2019-01-09 19:45:41
+Sauna,Iguana,8,81,2019-01-09 19:45:41
+Kitchen,Mule,0,19,2019-01-09 19:45:41
+Patio,Mule,0,25,2019-01-09 19:45:41
+Kitchen,Chupacabra,8,64,2019-01-09 19:45:41
+Club House,Tiburon,8,34,2019-01-09 19:45:41
+Sauna,Aardvark,0,46,2019-01-09 19:45:41
+Room,Weasle,0,66,2019-01-09 19:45:41
+Room,Mariposa,0,1,2019-01-09 19:45:41
+Coat Room,Tiburon,8,95,2019-01-09 19:45:41
+Room,Mariposa,8,71,2019-01-09 19:45:41
+Den,Chupacabra,0,70,2019-01-09 19:45:41
+Sauna,Chupacabra,8,75,2019-01-09 19:45:41
+Club House,Horse,8,71,2019-01-09 19:45:41
+Dining Room,Tiburon,8,16,2019-01-09 19:45:41
+Abuelita's Studio,Tiburon,8,22,2019-01-09 19:45:41
+Dog House,Pig,0,82,2019-01-09 19:45:41
+Kitchen,Chupacabra,8,14,2019-01-09 19:45:41
+Sauna,Tiburon,8,51,2019-01-09 19:45:41
+Den,Cat,8,83,2019-01-09 19:45:41
+Avery,Tiburon,8,49,2019-01-09 19:45:41
+Sauna,Dog,8,71,2019-01-09 19:45:41
+Shower,Cat,0,14,2019-01-09 19:45:41
+Patio,Pig,0,54,2019-01-09 19:45:41
+Sauna,Iguana,0,29,2019-01-09 19:45:41
+Coat Room,Chupacabra,8,51,2019-01-09 19:45:41
+Room,Dog,0,45,2019-01-09 19:45:41
+Club House,Aardvark,8,28,2019-01-09 19:45:41
+Patio,Dog,0,21,2019-01-09 19:45:41
+Closet,Iguana,8,99,2019-01-09 19:45:41
+Coat Room,Aardvark,8,50,2019-01-09 19:45:41
+Dog House,Horse,8,6,2019-01-09 19:45:41
+Club House,Chupacabra,0,61,2019-01-09 19:45:41
+Dog House,Dog,0,57,2019-01-09 19:45:41
+Tree House,Mariposa,8,28,2019-01-09 19:45:41
+Dog House,Chupacabra,8,77,2019-01-09 19:45:41
+Closet,Pig,8,6,2019-01-09 19:45:41
+Abuelita's Studio,Rana,8,31,2019-01-09 19:45:41
+Closet,Cat,0,7,2019-01-09 19:45:41
+Club House,Iguana,0,19,2019-01-09 19:45:41
+Coat Room,Weasle,0,5,2019-01-09 19:45:41
+Kitchen,Weasle,8,28,2019-01-09 19:45:41
+Avery,Mariposa,0,75,2019-01-09 19:45:41
+Dining Room,Tiburon,0,25,2019-01-09 19:45:41
+Dog House,Dog,8,37,2019-01-09 19:45:41
+Abuelita's Studio,Rana,0,63,2019-01-09 19:45:41
+Club House,Horse,8,53,2019-01-09 19:45:41
+Abuelita's Studio,Rana,0,56,2019-01-09 19:45:41
+Abuelita's Studio,Iguana,0,46,2019-01-09 19:45:41
+Kitchen,Pig,0,59,2019-01-09 19:45:41
+Closet,Rana,0,35,2019-01-09 19:45:41
+Room,Rana,0,44,2019-01-09 19:45:41
+Closet,Mule,8,3,2019-01-09 19:45:41
+Avery,Iguana,8,0,2019-01-09 19:45:41
+Dog House,Pig,0,38,2019-01-09 19:45:41
+Dog House,Mariposa,8,16,2019-01-09 19:45:41
+Room,Chupacabra,0,75,2019-01-09 19:45:41
+Tree House,Culebra,8,43,2019-01-09 19:45:41
+Club House,Iguana,8,4,2019-01-09 19:45:41
+Patio,Tiburon,0,79,2019-01-09 19:45:41
+Room,Mariposa,0,56,2019-01-09 19:45:41
+Dining Room,Chupacabra,0,47,2019-01-09 19:45:41
+Club House,Chupacabra,0,13,2019-01-09 19:45:41
+Tree House,Chupacabra,0,98,2019-01-09 19:45:41
+Tree House,Iguana,0,10,2019-01-09 19:45:41
+Patio,Mule,0,51,2019-01-09 19:45:41
+Dining Room,Tiburon,0,44,2019-01-09 19:45:41
+Abuelita's Studio,Weasle,8,99,2019-01-09 19:45:41
+Tree House,Tiburon,0,23,2019-01-09 19:45:41
+Club House,Cat,0,77,2019-01-09 19:45:41
+Dining Room,Rana,8,21,2019-01-09 19:45:41
+Sauna,Chupacabra,8,4,2019-01-09 19:45:41
+Home Gym,Dog,0,87,2019-01-09 19:45:41
+Home Gym,Iguana,8,35,2019-01-09 19:45:41
+Tree House,Culebra,0,73,2019-01-09 19:45:41
+Tree House,Mule,0,87,2019-01-09 19:45:41
+Sauna,Dog,8,70,2019-01-09 19:45:41
+Room,Mariposa,0,88,2019-01-09 19:45:41
+Coat Room,Tiburon,0,14,2019-01-09 19:45:41
+Room,Horse,0,66,2019-01-09 19:45:41
+Avery,Weasle,8,79,2019-01-09 19:45:41
+Closet,Iguana,0,23,2019-01-09 19:45:41
+Kitchen,Weasle,8,76,2019-01-09 19:45:41
+Club House,Rana,8,11,2019-01-09 19:45:41
+Patio,Rana,8,5,2019-01-09 19:45:41
+Dining Room,Culebra,0,30,2019-01-09 19:45:41
+Closet,Cat,0,54,2019-01-09 19:45:41
+Avery,Iguana,0,81,2019-01-09 19:45:41
+Dining Room,Dog,8,26,2019-01-09 19:45:41
+Sauna,Chupacabra,0,32,2019-01-09 19:45:41
+Shower,Dog,8,51,2019-01-09 19:45:41
+Room,Horse,0,92,2019-01-09 19:45:41
+Closet,Pig,0,22,2019-01-09 19:45:41
+Abuelita's Studio,Tiburon,0,38,2019-01-09 19:45:41
+Abuelita's Studio,Tiburon,8,65,2019-01-09 19:45:41
+Closet,Mariposa,0,8,2019-01-09 19:45:41
+Room,Dog,8,45,2019-01-09 19:45:41
+Patio,Cat,0,97,2019-01-09 19:45:41
+Dining Room,Iguana,0,12,2019-01-09 19:45:41
+Dog House,Weasle,8,90,2019-01-09 19:45:41
+Closet,Iguana,8,89,2019-01-09 19:45:41
+Dog House,Weasle,8,4,2019-01-09 19:45:41
+Den,Dog,0,0,2019-01-09 19:45:41
+Shower,Tiburon,0,42,2019-01-09 19:45:41
+Abuelita's Studio,Aardvark,0,59,2019-01-09 19:45:41
+Abuelita's Studio,Tiburon,8,61,2019-01-09 19:45:41
+Den,Pig,8,85,2019-01-09 19:45:41
+Den,Mule,8,18,2019-01-09 19:45:41
+Patio,Pig,0,99,2019-01-09 19:45:41
+Dog House,Cat,0,29,2019-01-09 19:45:41
+Dining Room,Iguana,8,72,2019-01-09 19:45:41
+Den,Dog,0,48,2019-01-09 19:45:41
+Sauna,Dog,8,72,2019-01-09 19:45:41
+Tree House,Iguana,8,96,2019-01-09 19:45:41
+Dining Room,Horse,8,93,2019-01-09 19:45:41
+Room,Horse,0,18,2019-01-09 19:45:41
+Home Gym,Iguana,0,58,2019-01-09 19:45:41
+Club House,Culebra,0,88,2019-01-09 19:45:41
+Room,Chupacabra,8,97,2019-01-09 19:45:41
+Home Gym,Mariposa,0,38,2019-01-09 19:45:41
+Home Gym,Dog,0,54,2019-01-09 19:45:41
+Coat Room,Pig,8,26,2019-01-09 19:45:41
+Closet,Mule,0,27,2019-01-09 19:45:41
+Closet,Tiburon,0,88,2019-01-09 19:45:41
+Abuelita's Studio,Cat,0,20,2019-01-09 19:45:41
+Avery,Dog,8,78,2019-01-09 19:45:41
+Den,Chupacabra,0,33,2019-01-09 19:45:41
+Patio,Mule,0,85,2019-01-09 19:45:41
+Tree House,Pig,8,35,2019-01-09 19:45:41
+Tree House,Cat,0,64,2019-01-09 19:45:41
+Closet,Pig,8,6,2019-01-09 19:45:41
+Closet,Rana,8,58,2019-01-09 19:45:41
+Tree House,Iguana,0,65,2019-01-09 19:45:41
+Tree House,Pig,0,0,2019-01-09 19:45:41
+Club House,Dog,8,59,2019-01-09 19:45:41
+Avery,Tiburon,0,79,2019-01-09 19:45:41
+Home Gym,Chupacabra,0,48,2019-01-09 19:45:41
+Club House,Culebra,8,69,2019-01-09 19:45:41
+Club House,Tiburon,8,40,2019-01-09 19:45:41
+Dog House,Pig,8,58,2019-01-09 19:45:41
+Shower,Tiburon,8,61,2019-01-09 19:45:41
+Den,Iguana,8,92,2019-01-09 19:45:41
+Dining Room,Weasle,8,91,2019-01-09 19:45:41
+Club House,Mule,0,67,2019-01-09 19:45:41
+Dog House,Iguana,8,20,2019-01-09 19:45:41
+Club House,Cat,0,15,2019-01-09 19:45:41
+Patio,Rana,0,40,2019-01-09 19:45:41
+Abuelita's Studio,Pig,0,76,2019-01-09 19:45:41
+Home Gym,Weasle,8,20,2019-01-09 19:45:41
+Room,Tiburon,0,10,2019-01-09 19:45:41
+Closet,Dog,0,67,2019-01-09 19:45:41
+Shower,Iguana,8,72,2019-01-09 19:45:41
+Dining Room,Horse,8,68,2019-01-09 19:45:41
+Sauna,Mule,0,31,2019-01-09 19:45:41
+Club House,Mule,0,63,2019-01-09 19:45:41
+Club House,Culebra,0,35,2019-01-09 19:45:41
+Room,Weasle,0,72,2019-01-09 19:45:41
+Coat Room,Pig,8,96,2019-01-09 19:45:41
+Dining Room,Iguana,0,60,2019-01-09 19:45:41
+Sauna,Chupacabra,0,27,2019-01-09 19:45:41
+Tree House,Horse,8,82,2019-01-09 19:45:41
+Dining Room,Weasle,0,90,2019-01-09 19:45:41
+Closet,Rana,8,37,2019-01-09 19:45:41
+Abuelita's Studio,Mariposa,8,37,2019-01-09 19:45:41
+Sauna,Culebra,8,10,2019-01-09 19:45:41
+Shower,Tiburon,8,85,2019-01-09 19:45:41
+Coat Room,Mule,0,57,2019-01-09 19:45:41
+Patio,Mariposa,0,66,2019-01-09 19:45:41
+Patio,Chupacabra,8,88,2019-01-09 19:45:41
+Closet,Culebra,8,3,2019-01-09 19:45:41
+Coat Room,Mariposa,8,1,2019-01-09 19:45:41
+Shower,Mule,0,95,2019-01-09 19:45:41
+Den,Iguana,0,68,2019-01-09 19:45:41
+Dining Room,Mariposa,8,54,2019-01-09 19:45:41
+Patio,Culebra,0,95,2019-01-09 19:45:41
+Dining Room,Mariposa,0,76,2019-01-09 19:45:41
+Kitchen,Rana,0,31,2019-01-09 19:45:41
+Tree House,Weasle,0,81,2019-01-09 19:45:41
+Dining Room,Rana,8,56,2019-01-09 19:45:41
+Dining Room,Dog,0,96,2019-01-09 19:45:41
+Dog House,Dog,0,64,2019-01-09 19:45:41
+Abuelita's Studio,Horse,0,85,2019-01-09 19:45:41
+Kitchen,Rana,8,71,2019-01-09 19:45:41
+Dog House,Weasle,0,50,2019-01-09 19:45:41
+Den,Mariposa,0,97,2019-01-09 19:45:41
+Abuelita's Studio,Cat,0,62,2019-01-09 19:45:41
+Shower,Chupacabra,0,5,2019-01-09 19:45:41
+Patio,Weasle,0,38,2019-01-09 19:45:41
+Club House,Cat,0,38,2019-01-09 19:45:41
+Home Gym,Weasle,8,68,2019-01-09 19:45:41
+Avery,Horse,0,30,2019-01-09 19:45:41
+Club House,Dog,8,14,2019-01-09 19:45:41
+Tree House,Dog,0,70,2019-01-09 19:45:41
+Avery,Aardvark,8,48,2019-01-09 19:45:41
+Den,Cat,0,13,2019-01-09 19:45:41
+Tree House,Pig,0,50,2019-01-09 19:45:41
+Closet,Horse,8,18,2019-01-09 19:45:41
+Den,Rana,0,17,2019-01-09 19:45:41
+Club House,Cat,8,91,2019-01-09 19:45:41
+Closet,Culebra,8,22,2019-01-09 19:45:41
+Avery,Dog,8,49,2019-01-09 19:45:41
+Coat Room,Pig,8,99,2019-01-09 19:45:41
+Home Gym,Iguana,0,43,2019-01-09 19:45:41
+Den,Mule,8,74,2019-01-09 19:45:41
+Home Gym,Rana,0,25,2019-01-09 19:45:41
+Closet,Chupacabra,8,54,2019-01-09 19:45:41
+Dining Room,Culebra,0,47,2019-01-09 19:45:41
+Club House,Cat,8,15,2019-01-09 19:45:41
+Dog House,Mariposa,8,45,2019-01-09 19:45:41
+Kitchen,Pig,0,30,2019-01-09 19:45:41
+Home Gym,Tiburon,8,39,2019-01-09 19:45:41
+Dog House,Tiburon,8,33,2019-01-09 19:45:41
+Kitchen,Rana,8,43,2019-01-09 19:45:41
+Club House,Rana,8,58,2019-01-09 19:45:41
+Room,Tiburon,8,54,2019-01-09 19:45:41
+Den,Tiburon,0,48,2019-01-09 19:45:41

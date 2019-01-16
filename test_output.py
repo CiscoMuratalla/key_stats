@@ -1,12 +1,10 @@
 import os, sys
 import webbrowser
-import platform
 import csv
 from tempfile import gettempdir
 from datetime import datetime
-from collections import namedtuple, OrderedDict
+from collections import namedtuple
 from timeit import default_timer as timer
-
 
 DEFAULT_SCREEN_STACK_SIZE = 20
 
@@ -20,43 +18,40 @@ HTML_HEADER = """\
 <body>
 """.splitlines()
 
-
 HTML_TRAILER = """\
 </body>
 </html>
 """.splitlines()
 
+field_names = ["Facility", "Description", "Result", "Minutes_elapsed", "Time_stamp"]
 
-field_names = [
-               'Facility', 'Test_group', 'Test_number',
-              'Description', 'Result', 'Execution_time',
-              'Information','Output'
-]
-
-Test_record = namedtuple('Test_record', field_names )
+Test_record = namedtuple("Test_record", field_names)
 
 
 def _write_HTML_header(fp):
-   for line in HTML_HEADER: fp.write(line)
+    for line in HTML_HEADER:
+        fp.write(line)
 
 
 def _write_HTML_trailer(fp):
-   for line in HTML_TRAILER: fp.write(line)
+    for line in HTML_TRAILER:
+        fp.write(line)
 
 
 def return_seconds_as_h_m_s(seconds):
-    '''
+    """
     return tuple h, m, s representing hours, minutes, seconds
-    '''
+    """
     m, s = divmod(seconds, 60)
     h, m = divmod(m, 60)
     return h, m, s
 
 
 class Test_Output:
-    '''
+    """
     Manage and generate test output data
-    '''
+    """
+
     def __init__(self):
         self.test_output_dir = None
         self.test_output = None
@@ -66,151 +61,129 @@ class Test_Output:
         self.report_start = 0
         self.init_output()
 
-
     def init_output(self):
-        '''
+        """
         Initialized test output area
-        '''
+        """
         self.test_output = []
         self.screen_trace_stack = []
 
-
-    def _format_text_html(self, text, size = None):
-        '''
+    def _format_text_html(self, text, size=None):
+        """
         format text to html
-        '''
-        #
-        # TODO add HTML text formatting: color, font, size
-        #
+        """
 
-        if isinstance(text,str):
+        if isinstance(text, str):
             text = text.splitlines()
 
-        #
-        # add html new line tag
-        #
         if size is None:
             text_size = 30
 
-        return ['<p style="font-size:{0}px">'.format(text_size)] + \
-                            [ line + '<br>' for line in text] + \
-                            ['</p>']
+        return (
+            ['<p style="font-size:{0}px">'.format(text_size)]
+            + [line + "<br>" for line in text]
+            + ["</p>"]
+        )
 
-
-    def add_text(self, text, size = None):
-        '''
+    def add_text(self, text, size=None):
+        """
         Add text to test output
-        '''
-        self.test_output += self._format_text_html(text, size = size)
-
+        """
+        self.test_output += self._format_text_html(text, size=size)
 
     def add_screen_trace_stack(self, screen):
-        ''' Add screen print to screen stack
-        '''
+        """ Add screen print to screen stack
+        """
         self.screen_trace_stack.append(screen)
-        if (
-            len(self.screen_trace_stack)
-            ==
-            self.screen_trace_stack_size*3
-        ):
-           self.screen_trace_stack = self.screen_trace_stack[
-                                          -self.screen_trace_stack_size:
-           ]
-
+        if len(self.screen_trace_stack) == self.screen_trace_stack_size * 3:
+            self.screen_trace_stack = self.screen_trace_stack[
+                -self.screen_trace_stack_size :
+            ]
 
     def _write_screen_trace_stack(self, fp):
-       for screen in self.screen_trace_stack[
-                                          -self.screen_trace_stack_size:
-       ]:
-          for line in screen:
-             fp.write(line.encode('ascii', 'ignore').decode() + '\n')
-
+        for screen in self.screen_trace_stack[-self.screen_trace_stack_size :]:
+            for line in screen:
+                fp.write(line.encode("ascii", "ignore").decode() + "\n")
 
     def add_screen(self, screen):
-        '''
+        """
         Add screen print to test output. screen is a list of data
         no html header should be included in screen
-        '''
+        """
 
         #
         # slice out html header and trailer
         #
         self.test_output += screen
 
-# added write_csv function and incremental file naming
+    # added write_csv function and incremental file naming
     def write_csv(self, csv_file):
         i = 0
-        while os.path.exists('output%s.csv' % i):
+        while os.path.exists("output%s.csv" % i):
             i += 1
-        with open('output%s.csv' % i, 'w', newline='') as f:
+        with open("output%s.csv" % i, "w", newline="") as f:
             w = csv.writer(f)
             w.writerow((field_names))
             w.writerows(self.output_records)
         return csv_file
 
     def write_file(self, filename):
-        '''
+        """
         Write test output created. '.htm' is appended to filename
-        '''
+        """
 
         #
         # Add html trailer
         #
 
         if self.test_output_dir is None:
-            self.set_dir('Test_Output')
+            self.set_dir("Test_Output")
 
-        os.makedirs(self.test_output_dir, exist_ok = True)
+        os.makedirs(self.test_output_dir, exist_ok=True)
 
-        full_filename = self.test_output_dir + os.sep + filename + '.htm'
+        full_filename = self.test_output_dir + os.sep + filename + ".htm"
 
-        with open(full_filename, 'w') as fp:
-           _write_HTML_header(fp)
-           for line in self.test_output:
-               fp.write(line.encode('ascii', 'ignore').decode() + '\n')
+        with open(full_filename, "w") as fp:
+            _write_HTML_header(fp)
+            for line in self.test_output:
+                fp.write(line.encode("ascii", "ignore").decode() + "\n")
 
-           fp.write(
-                    ''.join(
-                            self._format_text_html(
-                                   'Screen trace stack. Size = {}'
-                                   .format(self.screen_trace_stack_size)
-                            )
+            fp.write(
+                "".join(
+                    self._format_text_html(
+                        "Screen trace stack. Size = {}".format(
+                            self.screen_trace_stack_size
+                        )
                     )
-           )
-           self._write_screen_trace_stack(fp)
-           _write_HTML_trailer(fp)
+                )
+            )
+            self._write_screen_trace_stack(fp)
+            _write_HTML_trailer(fp)
 
-        print('Test output written to: ' + full_filename)
+        print("Test output written to: " + full_filename)
 
         return full_filename
 
-
-    def set_dir(self, prefix_dir = None):
-        '''
+    def set_dir(self, prefix_dir=None):
+        """
         Set output direcory
-        '''
+        """
         self.test_output_dir = (
-                                gettempdir()
-                                + os.sep
-                                + (
-                                   '' if prefix_dir is None
-                                   else prefix_dir
-                                )
-                                + os.sep
-                                + 'D'
-                                + datetime
-                                .strftime(datetime.now(), '%Y%m%d')
-                                + os.sep
-                                + 'T'
-                                + datetime
-                                .strftime(datetime.now(), '%H%M%S')
+            gettempdir()
+            + os.sep
+            + ("" if prefix_dir is None else prefix_dir)
+            + os.sep
+            + "D"
+            + datetime.strftime(datetime.now(), "%Y%m%d")
+            + os.sep
+            + "T"
+            + datetime.strftime(datetime.now(), "%H%M%S")
         )
 
-
-    def init_report(self, prefix_dir = None):
-        '''
+    def init_report(self, prefix_dir=None):
+        """
         initialize data for report
-        '''
+        """
         self.output_records = []
 
         # set output directory
@@ -218,32 +191,28 @@ class Test_Output:
 
         self.report_start = timer()
 
-
     def add_report_record(self, *args, **kwargs):
-       '''
+        """
        Add report record information. All parameters from this list
        must be specified:
-       '''
+       """
 
-       # Accept Test_record as one parameter
-       if len(args) == 1 and isinstance(args[0], Test_record):
-          self.output_records.append(args[0])
+        # Accept Test_record as one parameter
+        if len(args) == 1 and isinstance(args[0], Test_record):
+            self.output_records.append(args[0])
 
-       # other wise accept field from tuple as parm
-       else:
-          tuple_parms = ""
-          for fn in field_names:
-              tuple_parms += fn + " = kwargs['" + fn + "'], "
+        # other wise accept field from tuple as parm
+        else:
+            tuple_parms = ""
+            for fn in field_names:
+                tuple_parms += fn + " = kwargs['" + fn + "'], "
 
-          self.output_records.append(eval("Test_record(" + tuple_parms +
-                                                     ")"
-                                         )
-                                    )
+            self.output_records.append(eval("Test_record(" + tuple_parms + ")"))
 
-    def write_report(self, display_report = True):
-        '''
+    def write_report(self, display_report=True):
+        """
         Write report, calculate total count, failed, and total report time
-        '''
+        """
 
         report_end = timer()
         test_count = fail_count = skip_count = 0
@@ -276,7 +245,6 @@ class Test_Output:
 
                       """.splitlines()
 
-
         #
         # add column headers
         #
@@ -293,45 +261,51 @@ class Test_Output:
         #
         for tr in self.output_records:
             test_count += 1
-            new_row, row_result = '', None # added row_result
+            new_row, row_result = "", None  # added row_result
             for fn in field_names:
-                if fn == 'Result':
+                if fn == "Result":
                     if tr.Result > 4:
                         fail_count += 1
-                        output_value, row_result = 'Fail', False # added row_result
+                        output_value, row_result = "Fail", False  # added row_result
                     elif tr.Result == 4:
                         skip_count += 1
-                        output_value = 'Skipped'
+                        output_value = "Skipped"
                     else:
-                        output_value, row_result = 'Success', True # added row_result
-                elif fn == 'Output':
-                    output_value = ''
-                    if tr.Output != '':
-                        output_value = '<a target="_blank" href=' + \
-                                       FILE_LINK + tr.Output + \
-                                       ' style="display:block;">Output</a>'
-                elif fn == 'Execution_time':
-                    output_value = ('%d:%02d:%02d' %
-                                    return_seconds_as_h_m_s(tr.Execution_time)
-                                   )
+                        output_value, row_result = "Success", True  # added row_result
+                elif fn == "Output":
+                    output_value = ""
+                    if tr.Output != "":
+                        output_value = (
+                            '<a target="_blank" href='
+                            + FILE_LINK
+                            + tr.Output
+                            + ' style="display:block;">Output</a>'
+                        )
+                elif fn == "Execution_time":
+                    output_value = "%d:%02d:%02d" % return_seconds_as_h_m_s(
+                        tr.Execution_time
+                    )
                 else:
-                    output_value = str(getattr(tr,fn))
+                    output_value = str(getattr(tr, fn))
 
-                new_row += '<td>' + output_value + '</td>'
-            result_class = '' if row_result is None else ' class="{0}"'.format('selected' if row_result else 'bad') # added result_class
-            new_row = '<tr{0}>{1}</tr>'.format(result_class, new_row)
+                new_row += "<td>" + output_value + "</td>"
+            result_class = (
+                ""
+                if row_result is None
+                else ' class="{0}"'.format("selected" if row_result else "bad")
+            )  # added result_class
+            new_row = "<tr{0}>{1}</tr>".format(result_class, new_row)
             html_output.append(new_row)
 
-
         html_output += self._format_text_html(
-                 "Total tests: %d. Failed tests: %d. Skipped tests: %d."
-                 % (test_count, fail_count, skip_count)
+            "Total tests: %d. Failed tests: %d. Skipped tests: %d."
+            % (test_count, fail_count, skip_count)
         )
 
         html_output += self._format_text_html(
-                                       'Report test time %d:%02d:%02d' %
-                                    return_seconds_as_h_m_s(report_end -
-                                                     self.report_start))
+            "Report test time %d:%02d:%02d"
+            % return_seconds_as_h_m_s(report_end - self.report_start)
+        )
         html_output += """ \
 
                            </table>
@@ -392,17 +366,15 @@ function search() {
                        </html>
                        """.splitlines()
 
-
-
         #
         # create and write report file
         #
-        os.makedirs(self.test_output_dir, exist_ok = True)
-        full_filename = self.test_output_dir + os.sep + 'test_report.htm'
+        os.makedirs(self.test_output_dir, exist_ok=True)
+        full_filename = self.test_output_dir + os.sep + "test_report.htm"
 
-        with open(full_filename, 'w') as fp:
-           for line in html_output: fp.write(line + '\n')
-
+        with open(full_filename, "w") as fp:
+            for line in html_output:
+                fp.write(line + "\n")
 
         if display_report:
             #
