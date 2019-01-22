@@ -72,7 +72,7 @@ test_report.write_csv("csv_file")
 
 path = os.getcwd()
 
-files = glob.glob("*.csv")
+files = glob.glob("C:/Users/Cisco/key_stats/*.csv")
 
 list_of_dfs = [pd.read_csv(filename) for filename in files]
 
