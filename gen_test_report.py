@@ -73,6 +73,7 @@ test_report.write_csv("csv_file")
 path = os.getcwd()
 
 files = glob.glob("*.csv")
+
 list_of_dfs = [pd.read_csv(filename) for filename in files]
 
 # concatenate list of csv files into one dataframe
