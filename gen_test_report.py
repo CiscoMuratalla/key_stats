@@ -1,7 +1,6 @@
 import os
 import sys
 import random
-from pathlib import Path
 import numpy as np
 import pandas as pd
 import glob
@@ -60,7 +59,7 @@ for i in range(300):
             Description=random.choice(desc_choices),
             Result=random.choice((int(0), int(8))),
             Minutes_elapsed=int(random.random() * 10 ** 2),
-            Time_stamp=time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime()),
+            Time_stamp=time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()),
         )
     )
 
@@ -68,19 +67,10 @@ test_report.write_report(display_report=True)
 
 test_report.write_csv("csv_file")
 
-# create dataframe with all csv files in path then plot
-
-path = os.getcwd()
-
-files = glob.glob("C:/Users/Cisco/key_stats/*.csv")
-
-list_of_dfs = [pd.read_csv(filename) for filename in files]
-
-# concatenate list of csv files into one dataframe
-combined_df = pd.concat(list_of_dfs, ignore_index=True)
-
-# save combined_df to csv files
-combined_df.to_csv("source_data.csv", mode="a")
+combined_df = pd.concat(
+    [pd.read_csv(f) for f in glob.glob("C:/Users/Cisco/key_stats/*.csv")],
+    ignore_index=True,
+)
 
 # Chart 1
 df_plot = combined_df.pivot_table(
